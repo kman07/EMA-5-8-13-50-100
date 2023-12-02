@@ -1,0 +1,16 @@
+// This Pine Script™ code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
+// © Kmantrader
+
+study(title="EMA 5/8/13/50/100", overlay=true)
+
+shortest = ema(close, 5)
+short = ema(close, 8)
+longer = ema(close, 13)
+longest = ema(close, 50)
+longested = ema(close, 100)
+
+plot(shortest, color = green)
+plot(short, color = yellow)
+plot(longer, color = red)
+plot(longest, color = purple)
+plot(longested, color = white)
